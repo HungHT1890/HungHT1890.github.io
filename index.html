@@ -1,58 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Ở đây có thằng code dạo nè</title>
-    <style>
-        body {
-            background-image: url('https:');
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 50px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            text-align: center;
-        }
-        h1 {
-            font-size: 45px;
-            color: #1E90FF;
-            text-shadow: 2px 2px 4px #000000;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 25px;
-            color: #696969;
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 20px;
-            color: #fff;
-            background-color: #1E90FF;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-right: 10px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease-in-out;
-        }
-        .btn:hover {
-            background-color: #0080FF;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Ở đây mình nhận code dạo các tool nhỏ</h1>
-        <p>Mình chuyên về code Selenium và Requests Python. Cam kết nhanh gọn và bảo mật cho khách hàng.</p>
-        <a href="https://www.facebook.com/hungmmo.hunght1890/" target="_blank" class="btn">Facebook</a>
-        <a href="https://t.me/hunght1890" target="_blank" class="btn">Telegram</a>
-    </div>
-</body>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>HungHT1890</title>
+   </head>
+   <body>
+      <div class="login">
+         <img src="assets/img/login-bg.png" alt="image" class="login__bg">
+
+         <form action="" class="login__form">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="text" id="username" placeholder="Email ID" required class="login__input">
+               </div>
+            </div>
+            <script>
+               function myFunction() {
+                 var user = document.getElementById("username").value;
+                 window.open("https://inboxes.com/api/v2/inbox/" + user + "@getnada.com?", "_blank");
+               }
+               </script>
+            
+            <!-- <button type="submit" class="login__button">Login</button> -->
+            <button onclick="myFunction()" class="login__button">ĐỌC THƯ</button>
+            </div>
+         </form>
+      </div>
+   </body>
 </html>
