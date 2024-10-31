@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Button</title>
+    <style>
+        /* Đặt chiều cao toàn màn hình cho phần tử cha */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Sắp xếp theo cột */
+            justify-content: center; /* Căn giữa ngang */
+            align-items: center; /* Căn giữa dọc */
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+        /* Định dạng cho phần hướng dẫn */
+        .instruction {
+            font-size: 20px;
+            margin-bottom: 20px; /* Khoảng cách với nút */
+            color: #333;
+        }
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+        /* Định dạng nút */
+        .center-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50; /* Màu nền cho nút */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-      <title>HungHT1890</title>
-   </head>
-   <body>
-      <div class="login">
-         <img src="assets/img/login-bg.png" alt="image" class="login__bg">
+        /* Thêm hiệu ứng khi di chuột */
+        .center-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
 
-         <form action="" class="login__form">
-            <h1 class="login__title">Login</h1>
-
-            <div class="login__inputs">
-               <div class="login__box">
-                  <input type="text" id="username" placeholder="Email ID" required class="login__input">
-               </div>
-            </div>
-            <script>
-               function myFunction() {
-                 var user = document.getElementById("username").value;
-                 window.open("https://inboxes.com/api/v2/inbox/" + user + "@getnada.com?", "_blank");
-               }
-               </script>
-            
-            <!-- <button type="submit" class="login__button">Login</button> -->
-            <button onclick="myFunction()" class="login__button">ĐỌC THƯ</button>
-            </div>
-         </form>
-      </div>
-   </body>
+    <!-- Hướng dẫn -->
+    <div class="instruction">
+        Bước 1: Đăng Nhập vào tài khoản Taphoammo.net của bạn<br>
+	Bước 2: Click vào cái nút sẽ mất tiền
+    </div>
+    <button class="center-button" onclick="window.location.href='https://taphoammo.net/post/donate/3447b141-ddf4-4f29-9455-d1208185834a?amount=50000&comment=hay%20l%E1%BA%AFm%20%C4%91%C3%A3%20th%C3%A0nh%20c%C3%B4ng&_=1730368441249';">
+CLICK VÀO LINK NÀY ĐỂ VÀO TAPHOAMMO
+    </button>
+</body>
 </html>
